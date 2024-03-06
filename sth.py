@@ -20,8 +20,8 @@ i=2
 while i*i<=n:
     while n%i<1:
         s.append(i)
-        n /= i
+        n //= i
     i += 1
 if n>1:
-    s.append(i)
+    s.append(n)
 print(*s)
